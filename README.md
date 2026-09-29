@@ -4,6 +4,10 @@
 Generative large language model (LLM)-based recommender systems (LRS) can directly generate suitable items from user histories and have emerged as an important new paradigm in recommendation. However, LRS often exhibit severe popularity bias, resulting in excessive exposure of popular items. Existing methods typically perform debiasing according to the global popularity of items or tokens, which may overlook personalized user preferences. To address this issue, we propose Counterfactual Knowledge Distillation for Popularity Debiasing in LLM-based Recommendation (CKDLRec), which aims to mitigate popularity bias while preserving personalized recommendation capability.
 CKDLRec consists of two main stages. In the first stage, counterfactual data are constructed by jointly considering item popularity and users' historical preferences, and a teacher model with reduced popularity influence is trained on the resulting data. In the second stage, the student model is trained on the original interaction data, and debiased knowledge from the teacher is transferred through knowledge distillation. Meanwhile, representation-level adversarial learning is incorporated to further reinforce debiased knowledge transfer and reduce the interference of popularity bias. Extensive experiments on three real-world datasets demonstrate that CKDLRec achieves favorable performance in recommendation accuracy, fairness, and diversity.
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/3f98e586-78e6-47f0-88ee-733a94684175" width="95%">
+</p>
+
 ## Prepare the pretrained Hugging Face model Qwen2.5-1.5B-Instruct
 Qwen2.5-1.5B-Instruct  
 https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
