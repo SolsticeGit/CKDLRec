@@ -5,7 +5,7 @@ Generative large language model (LLM)-based recommender systems (LRS) can direct
 CKDLRec consists of two main stages. In the first stage, counterfactual data are constructed by jointly considering item popularity and users' historical preferences, and a teacher model with reduced popularity influence is trained on the resulting data. In the second stage, the student model is trained on the original interaction data, and debiased knowledge from the teacher is transferred through knowledge distillation. Meanwhile, representation-level adversarial learning is incorporated to further reinforce debiased knowledge transfer and reduce the interference of popularity bias. Extensive experiments on three real-world datasets demonstrate that CKDLRec achieves favorable performance in recommendation accuracy, fairness, and diversity.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/3f98e586-78e6-47f0-88ee-733a94684175" width="95%">
+  <img src="https://github.com/user-attachments/assets/9e4ee5fa-3dc2-4d9c-99fc-bf96b04cdab1" width="95%">
 </p>
 
 ## Prepare the pretrained Hugging Face model Qwen2.5-1.5B-Instruct
